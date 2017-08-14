@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/johnstonbl01/clementinejs-fcc#readme",
   "dependencies": {
+    "dotenv" : "*",
     "date-tools": "^1.2.1",
     "express": "^4.15.3",
     "moment": "^2.18.1",

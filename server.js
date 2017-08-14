@@ -5,7 +5,8 @@ var io = require( 'socket.io' )( http );
 var mongoose = require( 'mongoose' );
 var request = require( 'request' );
 var moment = require( 'moment' )
-mongoose.connect( "mongodb://localhost:27017/stock" );
+require('dotenv').load()
+mongoose.connect( process.env.MONGO_URI);
 var StockController = require( './stocksdb.js' );
 var stockController = new StockController()
 
