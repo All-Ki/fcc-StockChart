@@ -32,7 +32,6 @@ function stockController() {
 	}
 
 	this.addStock = function ( name, data,cb ) {
-		console.log( data );
 		var dates = [];
 		var datas = [];
 		for ( var i = 0; i < data.length; i++ ) {
